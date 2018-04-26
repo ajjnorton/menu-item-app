@@ -8,8 +8,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 2) Build or outline a form to submit name, company, email address and an enquiry with appropriate validation, submitting in-page with response message based on failure/success.
 ### Assignment 1
-## Menu-item-app
-
+#### Menu-item-app
+Basic approach. 
 - [ ] Consume the feed.
 - [ ] Render the view.
 - [ ] Add some styling.
+
+### Assignment 1
