@@ -32,15 +32,17 @@ export class AppComponent implements OnInit {
         this.menu = Array.from(feedData.menu.items, x => {
           return x;
         });
-        this.bespokeData();
+        this.mockData();
       });
   }
 
-  bespokeData() {
-   
+  mockData() {
     this.menu.forEach((item) => {
       // creates an array of five random 1's and 0's sorts in reverse ord to hold mock fav scores
       item.favs = Array.from({ length: 5 }, () => Math.floor(Math.random() * 2)).sort().reverse();
+      item.favs = Array.from({ length: 5 }, () => Math.floor(Math.random() * 2)).sort().reverse();
+      // mock random prices
+      item.prices.price.price = (Math.random() * (1.120) + 2.400).toFixed(2);
     });
 
   }
