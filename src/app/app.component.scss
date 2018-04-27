@@ -48,11 +48,6 @@ $menu-card-border:1px solid #ccc;
   opacity:0.85;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
 .mat-card-image {
   border-top: $menu-card-border;
   border-bottom: $menu-card-border;
@@ -77,6 +72,7 @@ $menu-card-border:1px solid #ccc;
   text-align:center;
   line-height:34px;
   margin:0px;
+  width:300px;
 }
 
 .allergy-container{
