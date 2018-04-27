@@ -58,14 +58,23 @@ $menu-card-border:1px solid #ccc;
   border-bottom: $menu-card-border;
 }
 
+.title-container{
+    height:74px;
+    margin-top:0px;
+    margin-bottom:20px;
+
+}
+
 .item-name {
   font: {
-    size: 26px;
+    size: 35px;
     family:$displayFont;
+    weight:100;
   } 
-  letter-spacing: -1px;
   color:$display-text-col;
   text-align:center;
+  line-height:34px;
+  margin:0px;
 }
 
 .allergy-container{
