@@ -56,10 +56,11 @@ $menu-card-border:1px solid #ccc;
 .mat-card-image {
   border-top: $menu-card-border;
   border-bottom: $menu-card-border;
+  height:190px;
 }
 
 .title-container{
-    height:74px;
+    height:88px;
     margin-top:0px;
     margin-bottom:20px;
 
@@ -72,6 +73,7 @@ $menu-card-border:1px solid #ccc;
     weight:100;
   } 
   color:$display-text-col;
+  color:rgb(38, 76, 120);
   text-align:center;
   line-height:34px;
   margin:0px;
