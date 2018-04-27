@@ -13,8 +13,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 [View Demo](https://menu-item-app.herokuapp.com)
 
 Basic approach. 
-- [*] Consume the feed.
-- [ ] Render the view.
+- [x] Consume the feed.
+- [x] Render the view.
 - [ ] Add some styling.
 
 
