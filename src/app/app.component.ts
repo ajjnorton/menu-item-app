@@ -10,8 +10,7 @@ export class AppComponent implements OnInit {
   title = 'menuItemApp';
 
   feed: string = 'https://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1';
-  feedData: any[] = [];
-
+  menu: any[] = [];
   constructor(public http: Http) {
 
   }
@@ -29,9 +28,14 @@ export class AppComponent implements OnInit {
   consumeMenuItemFeed() {
     this.http.get(this.feed)
       .subscribe(response => {
-        this.feedData = response.json();
-      });
-  }
+        const feedData = response.json();
+        console.log(feedData.menu);
+        this.menu = Array.from(feedData.menu.items, x => {
+          return x;
+        });
+        console.log(this.menu);
+  });
+}
 
 
 

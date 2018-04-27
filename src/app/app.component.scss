@@ -1,0 +1,121 @@
+@import "src/styles.scss";
+$display-text-col:rgb(142, 142, 249);
+$menu-card-border:1px solid #ccc;
+
+.image-container{
+    width:100%; 
+    height:100%; 
+    overflow:hidden;
+}
+
+.header-img {
+  background-image: url('../assets/spring1.jpg'); //background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height:100%;
+  transform: scale(1.1);
+  filter: blur(14px);
+  
+}
+
+.container {
+  h1 {
+    text-align: center;
+    font: {
+      weight: 100;
+      size: 64px;
+      family:$displayFont;
+    }
+    color:white;
+
+    text-shadow: 1px 1px 5px rgb(126,
+    126,
+    126);
+  }
+  position: absolute;
+  top: 0;
+  //height: 100%;
+  overflow: auto; //width:100%;
+  //max-width:1300px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  height:100%;
+ 
+ 
+}
+
+.circle
+    {
+    width:25px;
+    height:25px;
+    border-radius:25px;
+    font-size:10px;
+    color:#fff;
+    line-height:25px;
+    text-align:center;
+    background:rgb(171, 171, 171);
+    margin:0px 5px 0px 0px;
+    }
+
+.menu-card {
+  max-width: 350px;
+  margin: 20px;
+  border-radius: 10px;
+  opacity:0.85;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.mat-card-image {
+  border-top: $menu-card-border;
+  border-bottom: $menu-card-border;
+}
+
+.item-name {
+  font: {
+    size: 26px;
+    //weight: 400;
+    family:$displayFont;
+  } //letter-spacing: -1px;
+  color:$display-text-col;
+  text-align:center;
+}
+
+.allergy-container{
+    margin-top:10px;
+   
+}
+
+.allergy-item-container{
+    margin-right:10px;
+    
+}
+.allerg-image{
+    margin:0px;
+    padding:0px;
+}
+.allergy-text{
+    margin:0px;
+    font-size:10px;
+    text-align:center;
+    color:#999;
+    font-weight:300;
+}
+
+.fav-container{
+    text-align:center;
+    color:#ccc;
+}
+
+.price {
+  color: $display-text-col;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom:0px;
+}

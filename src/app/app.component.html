@@ -1,7 +1,60 @@
-<h1>Menu item app</h1>
+<div class="image-container">
+  <div class="header-img">
 
-<h4>Menu Feed data</h4>
-<pre>{{feedData | json}}</pre>
+  </div>
+</div>
+<div class="container" fxLayout="column">
+  <h1>Spring Menu</h1>
+  <div fxLayout="row wrap" fxLayoutAlign="center">
+    <mat-card *ngFor="let item of menu" class="menu-card" [ngStyle.xs]="{'min-width':'330px'}">
+      <h3 class="item-name">{{item.name}}</h3>
+
+      <img mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu">
 
 
+      <mat-card-content>
+        <h2 class="price">
+          {{item.prices.price.price | currency:'GBP'}}
+        </h2>
+        <div class="allergy-container" fxLayout fxLayoutAlign="center">
+          <div fxLayout="column" class='allergy-item-container'>
+            <img class="allergy-image" src="/assets/foodIcons/wheat_red_50x50.jpg" alt="">
+            <p class="allergy-text">Contains
+              <br>Wheat</p>
+          </div>
+          <div fxLayout="column" class='allergy-item-container'>
+            <img class="allergy-image" src="/assets/foodIcons/milk_red_50x50.jpg" alt="">
+            <p class="allergy-text">Contains
+              <br>Milk</p>
+          </div>
+          <div fxLayout="column" class='allergy-item-container'>
+            <img class="allergy-image" src="/assets/foodIcons/fish_red_50x50.jpg" alt="">
+            <p class="allergy-text">Contains
+              <br>Seafood</p>
+          </div>
+          <div fxLayout="column" class='allergy-item-container'>
+            <img class="allergy-image" src="/assets/foodIcons/peanut_amber_50x50.jpg" alt="">
+            <p class="allergy-text">May Contain
+              <br>Nuts</p>
+          </div>
 
+        </div>
+
+      </mat-card-content>
+      <div class="fav-container" fxlayout>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star_border</mat-icon>
+          <mat-icon>star_border</mat-icon>
+          <mat-icon>star_border</mat-icon>
+      </div>
+     
+      <mat-card-actions fxLayoutAlign="center">
+  
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+
+    </mat-card>
+  </div>
+
+</div>

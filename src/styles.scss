@@ -2,8 +2,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 $masterFont:'Roboto', sans-serif;
+$displayFont: 'Lobster', cursive;
 
 html,
 body {
