@@ -16,12 +16,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.consumeMenuItemFeed());
+    this.consumeMenuItemFeed();
   }
 
 
   /**
-   * Consumes the supplied feed and returns a json object
+   * Consumes the supplied feed createa array from json object
    *
    * @memberof AppComponent
    */
@@ -29,13 +29,21 @@ export class AppComponent implements OnInit {
     this.http.get(this.feed)
       .subscribe(response => {
         const feedData = response.json();
-        console.log(feedData.menu);
         this.menu = Array.from(feedData.menu.items, x => {
           return x;
         });
-        console.log(this.menu);
-  });
-}
+        this.bespokeData();
+      });
+  }
+
+  bespokeData() {
+   
+    this.menu.forEach((item) => {
+      // creates an array of five random 1's and 0's sorts in reverse ord to hold mock fav scores
+      item.favs = Array.from({ length: 5 }, () => Math.floor(Math.random() * 2)).sort().reverse();
+    });
+
+  }
 
 
 
