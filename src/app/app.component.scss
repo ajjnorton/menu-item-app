@@ -16,7 +16,6 @@ $menu-card-border:1px solid #ccc;
   height:100%;
   transform: scale(1.1);
   filter: blur(14px);
-  
 }
 
 .container {
@@ -28,37 +27,19 @@ $menu-card-border:1px solid #ccc;
       family:$displayFont;
     }
     color:white;
-
     text-shadow: 1px 1px 5px rgb(126,
     126,
     126);
   }
   position: absolute;
   top: 0;
-  //height: 100%;
-  overflow: auto; //width:100%;
-  //max-width:1300px;
+  overflow: auto;
   left:0;
   right:0;
   margin-left:auto;
   margin-right:auto;
   height:100%;
- 
- 
 }
-
-.circle
-    {
-    width:25px;
-    height:25px;
-    border-radius:25px;
-    font-size:10px;
-    color:#fff;
-    line-height:25px;
-    text-align:center;
-    background:rgb(171, 171, 171);
-    margin:0px 5px 0px 0px;
-    }
 
 .menu-card {
   max-width: 350px;
@@ -80,16 +61,15 @@ $menu-card-border:1px solid #ccc;
 .item-name {
   font: {
     size: 26px;
-    //weight: 400;
     family:$displayFont;
-  } //letter-spacing: -1px;
+  } 
+  letter-spacing: -1px;
   color:$display-text-col;
   text-align:center;
 }
 
 .allergy-container{
     margin-top:10px;
-   
 }
 
 .allergy-item-container{
@@ -112,8 +92,6 @@ $menu-card-border:1px solid #ccc;
     text-align:center;
     color:#ccc;
 }
-
-
 
 
 .price {

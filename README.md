@@ -4,18 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ### Coding Challenge
-1) Interpret the example JSON feed below into a responsive layout: Feed URL: https://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1
-
-2) Build or outline a form to submit name, company, email address and an enquiry with appropriate validation, submitting in-page with response message based on failure/success.
+Interpret the example JSON feed below into a responsive layout: Feed URL: https://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1
 
 
-### Assignment 1 - menu-item-app
+### menu-item-app
 [View Demo](https://menu-item-app.herokuapp.com)
 
 Basic approach. 
 - [x] Consume the feed.
 - [x] Render the view.
-- [ ] Add some styling.
-
-
-### Assignment 2
+- [x] Add some styling.
